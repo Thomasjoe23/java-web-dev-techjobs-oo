@@ -43,7 +43,16 @@ public class JobTest {
         assertFalse(testJob3.equals(testJob4));
     }
 
-
-
+    @Test
+    public void testToString(){
+        assertNotEquals(testJob3.toString(),
+                "\nName: " + testJob3.getName() +
+                "\nEmployer: " + testJob3.getEmployer() +
+                "\nLocation: " + testJob3.getLocation() +
+                "\nPosition Type: " + testJob3.getPositionType() +
+                "\nCore Competency: " + testJob3.getCoreCompetency() +
+                "\n"
+        );
+    }
 
 }
